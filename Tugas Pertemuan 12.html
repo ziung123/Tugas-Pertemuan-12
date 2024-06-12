@@ -1,0 +1,198 @@
+html
+Salin kode
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rozian Fadila Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+    .navbar {
+      background-color: #008cba;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #fff !important;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ffdd57 !important;
+    }
+    header {
+      background: url('Background/1500x500') no-repeat center center;
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      background-color: rgba(0, 140, 186, 0.7);
+      background-blend-mode: overlay;
+    }
+    header h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    header p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    #about {
+      padding: 60px 0;
+      background-color: #fff;
+      text-align: center;
+    }
+    #about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    #about p {
+      font-size: 1.2rem;
+    }
+    #about img {
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      height: 200px;
+    }
+    #education {
+      padding: 60px 0;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+    #education h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    #education .card {
+      border: none;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    #contact {
+      padding: 60px 0;
+      background-color: #fff;
+      text-align: center;
+    }
+    #contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #008cba;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#">Rozian Fadila</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Header -->
+<header>
+  <h1>Hello, I'm Rozian Fadila</h1>
+  <p>Student of Informatics</p>
+</header>
+
+<!-- About Section -->
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <img src="Ozan.jpeg" alt="Profile Picture" class="img-fluid rounded-circle">
+      </div>
+      <div class="col-md-8">
+        <p><strong>Name:</strong> Rozian Fadila</p>
+        <p><strong>Date of Birth:</strong> 30 May 2004</p>
+        <p>I'm a student currently studying Informatics. I have a passion for technology and love to learn new things.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+  <div class="container">
+    <h2>Education</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><strong>NIM:</strong> 5520122037</h5>
+            <p class="card-text"><strong>Program:</strong> Informatics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" style="background-color: #008cba; border: none;">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Rozian Fadila. All rights reserved.</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
